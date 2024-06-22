@@ -1,0 +1,62 @@
+.producto-detalle {
+    display: flex;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .imagen {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .imagen img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .informacion {
+    flex: 2;
+    padding: 10px;
+  }
+  
+  .informacion h2 {
+    margin-top: 0;
+  }
+  
+  .precio {
+    font-size: 1.5em;
+    color: #b12704;
+  }
+  
+  .descripcion, .marca, .colores, .especificaciones {
+    margin: 5px 0;
+  }
+  
+  .tallas, .cantidad {
+    margin: 10px 0;
+  }
+  
+  .botones {
+    margin-top: 20px;
+  }
+  
+  .comprar, .añadir-carrito {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .comprar {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .añadir-carrito {
+    background-color: #dc3545;
+    color: white;
+  }
+  .btn-custom-size {
+    font-size: 15px; /* Ajusta el tamaño del texto */
+  }
+  

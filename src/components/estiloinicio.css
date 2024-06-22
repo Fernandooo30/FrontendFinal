@@ -1,0 +1,15 @@
+/* estiloinicio.css */
+
+/* Establece el tamaño del contenedor para cubrir toda la pantalla */
+.cover-container {
+    min-height: 100vh; /* Altura mínima del viewport */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Ajusta la imagen de fondo para que cubra todo el contenedor */
+  .cover-container {
+    background-size: cover;
+    background-position: center;
+  }
+  
