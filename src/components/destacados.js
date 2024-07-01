@@ -18,7 +18,7 @@ function FeaturedProducts() {
         <div className="row">
           <div className="col-12 col-md-4 mb-4">
             <div className="card h-100">
-              <a href="shop-single.html">
+              <a href="tienda">
                 <Image src="img/gorritotecsup.jpg" className="card-img-top" alt="..." />
               </a>
               <div className="card-body">
@@ -32,7 +32,7 @@ function FeaturedProducts() {
                   </li>
                   <li className="text-muted text-right">S/. 24.00</li>
                 </ul>
-                <a href="shop-single.html" className="h2 text-decoration-none text-dark">Gorra contra el Sol Logo Tecsup </a>
+                <a href="tienda" className="h2 text-decoration-none text-dark">Gorra contra el Sol Logo Tecsup </a>
                 <p className="card-text">
                   Diseñada para ofrecer protección contra los rayos UV y un ajuste cómodo, esta gorra es perfecta para tus aventuras bajo el sol.
                 </p>
@@ -42,7 +42,7 @@ function FeaturedProducts() {
           </div>
           <div className="col-12 col-md-4 mb-4">
             <div className="card h-100">
-              <a href="shop-single.html">
+              <a href="tienda">
                 <Image src="img/mochila.png" className="card-img-top" alt="..." />
               </a>
               <div className="card-body">
@@ -56,7 +56,7 @@ function FeaturedProducts() {
                   </li>
                   <li className="text-muted text-right">S/. 24.00</li>
                 </ul>
-                <a href="shop-single.html" className="h2 text-decoration-none text-dark">Mochila Aventurera</a>
+                <a href="tienda" className="h2 text-decoration-none text-dark">Mochila Aventurera</a>
                 <p className="card-text">
                   Con compartimentos espaciosos y bolsillos organizadores, esta mochila es ideal para llevar todo lo que necesites.
                 </p>
@@ -66,7 +66,7 @@ function FeaturedProducts() {
           </div>
           <div className="col-12 col-md-4 mb-4">
             <div className="card h-100">
-              <a href="shop-single.html">
+              <a href="tienda">
                 <Image src="img/pantalones.png" className="card-img-top" alt="..." />
               </a>
               <div className="card-body">
@@ -80,7 +80,7 @@ function FeaturedProducts() {
                   </li>
                   <li className="text-muted text-right">S/. 24.00</li>
                 </ul>
-                <a href="shop-single.html" className="h2 text-decoration-none text-dark">Pantalones Antimanchas</a>
+                <a href="tienda" className="h2 text-decoration-none text-dark">Pantalones Antimanchas</a>
                 <p className="card-text">
                   Fabricados con tejidos elásticos y transpirables, estos pantalones te brindan libertad de movimiento y comodidad durante tus actividades.
                 </p>

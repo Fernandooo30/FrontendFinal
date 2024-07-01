@@ -13,11 +13,11 @@ function Inicio() {
     <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column text-bg-dark justify-content-center align-items-center" style={{ backgroundImage: "url('img/Fondo.jpg')", backgroundSize: "cover", backgroundPosition: "center" }}>
       <header className="mb-auto">
         <div>
-          <h3 className="float-md-start mb-0" style={{ color: 'black' }}>Inicio</h3>
+          <h3 className="float-md-start mb-0" style={{ color: 'black' }}></h3>
           <nav className="nav nav-masthead justify-content-center float-md-end">
-            <a className="nav-link py-1 px-0 active" aria-current="page" href="index" style={{ color: 'black', fontWeight: 500 }} >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Página principal</a>
-            <a className="nav-link py-1 px-0" href="tienda" style={{ color: 'black', fontWeight: 500 }}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Catálogo</a>
-            <a className="nav-link py-1 px-0" href="contacto" style={{ color: 'black', fontWeight: 500 }}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contacto</a>
+            <a className="nav-link py-1 px-0 active" aria-current="page" style={{ color: 'black', fontWeight: 500 }} >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Descubre la Última Moda en Nuestra Tienda de Ropa Online</a>
+            <a className="nav-link py-1 px-0" style={{ color: 'black', fontWeight: 500 }}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <a className="nav-link py-1 px-0" style={{ color: 'black', fontWeight: 500 }}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
           </nav>
         </div>
       </header>

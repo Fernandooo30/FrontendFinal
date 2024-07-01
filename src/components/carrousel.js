@@ -59,7 +59,7 @@ function Carousel() {
           <div className="container">
             <div className="row p-5">
               <div className="mx-auto col-md-8 col-lg-6 order-lg-last">
-                <Image id="carousel-image-3" className="img-fluid carousel-image" src="img/pantalonchino.png" alt="" />
+                <Image id="carousel-image-3" className="img-fluid carousel-image" src="img/pantaloncillos.png" alt="" />
               </div>
               <div className="col-lg-6 mb-0 d-flex align-items-center">
                 <div className="text-align-left">

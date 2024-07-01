@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
@@ -9,7 +9,6 @@ import Footer from './components/footer';
 import ProductList from './components/prenda';
 import ProductDetail from './components/producto';
 import DetalleProducto from './components/DetalleProducto'; 
-
 import Login from './components/Login';
 import Registro from './components/registro';
 import Inicio from './components/paginainicio';
@@ -24,11 +23,40 @@ import Pagar from './components/pagar';
 import Perfil from './components/perfil';
 
 function App() {
+  const [carrito, setCarrito] = useState([]);
+
+  const agregarAlCarrito = (producto) => {
+    setCarrito([...carrito, producto]);
+    localStorage.setItem('carrito', JSON.stringify([...carrito, producto]));
+  };
+  const fondoEstilo = {
+    backgroundImage: "url('img/fercho.png')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    height: "110vh",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center"
+    
+  };
+
+  const fondoEstilos = {
+    backgroundImage: "url('img/fercho.png')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    height: "160vh",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center"
+    
+  };
   return (
     <Router>
       <Routes>  
-        <Route path="/login" element={<><Login /><br /></>} />
-        <Route path="/registro" element={<><Registro /><br /></>} />
+        <Route path="/login" element={          <div style={fondoEstilo}>
+        <><Login /><br /><br /></></div>} />
+        <Route path="/registro" element={ <div style={fondoEstilos}><><Registro /><br />            <br />
+          </></div>} />
         <Route path="/inicio" element={<Inicio />} />
         <Route path="/index" element={
           <>
@@ -51,7 +79,6 @@ function App() {
           <>
             <Navbar />
             <ProductList />
-            
             <Footer />
           </>
         } />
@@ -59,23 +86,26 @@ function App() {
           <>
             <Navbar />
             <ProductDetail />
-            
             <Footer />
           </>
         } />
-        <Route path="/tienda" element={<ProductList />} />
-        <Route path="/producto" element={<ProductDetail />} />
         <Route path="/producto/:id" element={
           <>
             <Navbar />
             <br />
+
             <br />
 
-            <DetalleProducto />   
             <br />
             <br />
-         
+            <DetalleProducto agregarAlCarrito={agregarAlCarrito} />   
+            <br />
+            <br />
+
+            <br />
+            <br />
             <Footer />
+            
           </>
         } />{/* Ruta para DetalleProducto con ID dinámico */}
         <Route path="/contacto" element={
@@ -91,7 +121,6 @@ function App() {
             <CarritoCompras />
             <br />
             <br />
-
             <Footer />
           </>
         } />
@@ -101,12 +130,26 @@ function App() {
             <Perfil />
             <br />
             <br />
-            
             <Footer />
-            
           </>
         } />
-        <Route path="/pagar" element={<Pagar />} />
+        <Route path="/pagar" element={
+          <>          
+            <Navbar />            
+            <br />
+            <br />
+            <Pagar /> 
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <Footer />
+          </> 
+        } />
       </Routes>
     </Router>
   );

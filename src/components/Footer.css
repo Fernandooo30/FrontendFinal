@@ -1,0 +1,50 @@
+/* Footer.css */
+
+#tempaltemo_footer {
+  background-color: #343a40;
+  color: #808080;
+  padding: 40px 0;
+}
+
+#tempaltemo_footer .logo {
+  color: #28a745;
+}
+
+#tempaltemo_footer a.text-decoration-none {
+  color: #808080;
+}
+
+#tempaltemo_footer a.text-decoration-none:hover {
+  color: #fff;
+}
+
+#tempaltemo_footer .footer-link-list li {
+  margin-bottom: 10px; /* Ajusta este valor según tus necesidades */
+}
+
+#tempaltemo_footer .border-bottom {
+  border-bottom: 1px solid #dee2e6;
+}
+
+#tempaltemo_footer .footer-link-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+#tempaltemo_footer .footer-link-list a {
+  color: #808080;
+  text-decoration: none;
+}
+
+#tempaltemo_footer .footer-link-list a:hover {
+  color: #fff;
+}
+
+#tempaltemo_footer .footer-link-list li {
+  margin-bottom: 5px; /* Ajusta este valor para reducir el espaciado */
+  line-height: 1.5; /* Ajusta este valor para el espaciado entre líneas */
+}
+
+#tempaltemo_footer .footer-link-list li i {
+  margin-right: 5px; /* Espaciado entre el icono y el texto */
+}

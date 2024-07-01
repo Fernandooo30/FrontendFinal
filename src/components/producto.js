@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import './DetalleProducto.css'; // Asegúrate de crear y ajustar este archivo CSS
 
-function DetalleProducto() {
+function DetalleProducto({ agregarAlCarrito }) {
   const { id } = useParams();
   const [producto, setProducto] = useState(null);
   const [size, setSize] = useState(''); // Estado para la talla seleccionada
@@ -16,6 +16,17 @@ function DetalleProducto() {
 
   const handleSizeClick = (talla) => {
     setSize(talla);
+  };
+
+  const handleAgregarAlCarrito = () => {
+    if (producto) {
+      agregarAlCarrito({
+        id: producto.id,
+        nombre: producto.nombre,
+        precio: producto.precio,
+        cantidad: 1 // Puedes inicializar la cantidad como desees
+      });
+    }
   };
 
   if (!producto) {
@@ -74,7 +85,7 @@ function DetalleProducto() {
             <button type="submit" className="btn btn-success btn-lg" name="submit" value="buy">Comprar</button>
           </div>
           <div className="col d-grid">
-            <button type="submit" className="btn btn-danger btn-lg" name="submit" value="addtocart">Añadir al carrito</button>
+            <button type="submit" className="btn btn-danger btn-lg" name="submit" value="addtocart" onClick={handleAgregarAlCarrito}>Añadir al carrito</button>
           </div>
         </div>
       </div>

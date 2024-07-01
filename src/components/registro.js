@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Form, Button, Image } from 'react-bootstrap';
 import axios from 'axios';
-import './estiloregister.css';
+import { useNavigate } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
@@ -16,6 +18,7 @@ function Registro() {
   });
 
   const [error, setError] = useState(null);
+  const navigate = useNavigate(); // Hook para redireccionar
 
   const handleChange = (e) => {
     const { id, value } = e.target;
@@ -33,6 +36,11 @@ function Registro() {
         },
       });
       console.log('Registro exitoso:', response.data);
+      toast.success('Registro exitoso', {
+        position: "top-center",
+        autoClose: 2000, 
+        onClose: () => navigate('/login') 
+      });
     } catch (error) {
       if (error.response) {
         console.error('Error en el registro:', error.response.data);
@@ -48,6 +56,7 @@ function Registro() {
   };
 
   return (
+
     <div className="container w-75 bg-primary mt-5 rounded shadow">
       <Row className="align-items-stretch">
         <Col className="bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded" style={{ backgroundImage: 'url("img/sandisonrisa.jpg")', backgroundPosition: 'center center', backgroundSize: 'cover' }}>
@@ -133,7 +142,9 @@ function Registro() {
           </Container>
         </Col>
       </Row>
-    </div>
+      <ToastContainer />
+    </div>   
+
   );
 }
 

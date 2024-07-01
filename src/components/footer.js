@@ -1,16 +1,17 @@
 import React from 'react';
-import { Container, Row, Col, Form, Button, Image } from 'react-bootstrap';
+import { Container, Row, Col, Image } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
+import './Footer.css'; // Importa el archivo CSS
 
 function Footer() {
   return (
     <footer className="bg-dark" id="tempaltemo_footer">
       <div className="container">
         <div className="row">
-          <div className="col-md-4 pt-5">
+          <div className="col-md-4 pt-8"> {/* Reducir padding top */}
             <h2 className="h2 text-success border-bottom pb-3 border-light logo">Zandia</h2>
-            <ul className="list-unstyled text-light footer-link-list">
+            <ul className="list-unstyled footer-link-list">
               <li>
                 <i className="fas fa-map-marker-alt fa-fw"></i>
                 Viste tu estilo, vive tu moda
@@ -25,9 +26,9 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="col-md-4 pt-5">
+          <div className="col-md-4 pt-8"> {/* Reducir padding top */}
             <h2 className="h2 text-light border-bottom pb-3 border-light">Productos</h2>
-            <ul className="list-unstyled text-light footer-link-list">
+            <ul className="list-unstyled footer-link-list">
               <li><a className="text-decoration-none" href="#">Lujo</a></li>
               <li><a className="text-decoration-none" href="#">Ropa Deportiva</a></li>
               <li><a className="text-decoration-none" href="#">Zapatos para Hombres</a></li>
@@ -37,9 +38,9 @@ function Footer() {
               <li><a className="text-decoration-none" href="#">Zapatos Deportivos</a></li>
             </ul>
           </div>
-          <div className="col-md-4 pt-5">
+          <div className="col-md-4 pt-8"> {/* Reducir padding top */}
             <h2 className="h2 text-light border-bottom pb-3 border-light">Información Adicional</h2>
-            <ul className="list-unstyled text-light footer-link-list">
+            <ul className="list-unstyled footer-link-list">
               <li><a className="text-decoration-none" href="#">Inicio</a></li>
               <li><a className="text-decoration-none" href="#">Acerca de Nosotros</a></li>
               <li><a className="text-decoration-none" href="#">Ubicaciones de la Tienda</a></li>
@@ -49,9 +50,9 @@ function Footer() {
           </div>
         </div>
       </div>
- 
     </footer>
   );
 }
 
 export default Footer;
+  
